@@ -32,5 +32,24 @@ class ExampleUnitTest {
         assertFalse(15.isPrime)
         assertFalse(16.isPrime)
         assertTrue(17.isPrime)
+    }    @Test
+
+    fun `when guessing prime with long, we get the right results`(): Unit = runBlocking {
+        assertTrue(2L.isPrime)
+        assertTrue(3L.isPrime)
+        assertFalse(4L.isPrime)
+        assertTrue(5L.isPrime)
+        assertFalse(6L.isPrime)
+        assertTrue(7L.isPrime)
+        assertFalse(8L.isPrime)
+        assertFalse(9L.isPrime)
+        assertFalse(10L.isPrime)
+        assertTrue(11L.isPrime)
+        assertFalse(12L.isPrime)
+        assertTrue(13L.isPrime)
+        assertFalse(14L.isPrime)
+        assertFalse(15L.isPrime)
+        assertFalse(16L.isPrime)
+        assertTrue(17L.isPrime)
     }
 }
